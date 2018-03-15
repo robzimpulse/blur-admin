@@ -10,7 +10,7 @@
       var login = localStorage.getObject('dataUser');
       if (toState.authenticate && _.isEmpty(login)) {
         // User isn’t authenticated
-        $state.transitionTo("authSignIn");
+        $state.transitionTo("login");
         event.preventDefault();
       }
     });
